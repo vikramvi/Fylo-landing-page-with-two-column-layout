@@ -125,7 +125,96 @@ article {
   font-weight: var(--fw-400);
 }
 
+/* style 3rd component - mobile */
+
+.info-component {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.info-component__heading {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-700);
+  font-size: 2.2rem;
+}
+
+.info-component__info-1,
+.info-component__info-2 {
+  width: 86%;
+
+  font-size: 1.4rem;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-400);
+
+  text-align: center;
+}
+
+.info-component__working-info {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 50%;
+  border-bottom: 0.1rem solid green;
+}
+
+.info-component__working-info > p {
+  font-size: 1.4rem;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-400);
+}
+
+.info-component__working-info > img {
+  width: 2.5rem;
+}
+
+.info-component__testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 0 5rem;
+}
+
+.info-component__testimonial > p {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-400);
+  font-size: 1.2rem;
+}
+
+.info-component__testimonial-person-details {
+  display: flex;
+  gap: 1rem;
+}
+
+.info-component__testimonial-person-details > img {
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.info-component__testimonial-person-details > section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  justify-content: center;
+}
+
+.info-component__testimonial-person-details > section > h3 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-700);
+  font-size: 1.2rem;
+}
+
+.info-component__testimonial-person-details > section > p {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-400);
+  font-size: 1rem;
+}
+
 /* style 4th component - mobile */
+
 .product-trial-component {
   display: flex;
   flex-direction: column;
