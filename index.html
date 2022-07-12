@@ -14,160 +14,158 @@
 
 <body>
 
-  <!-- component 1 -->
-  <header>
-    <img src="./images/logo.svg" alt="company logo">
-    <nav>
-      <ol>
-        <li>
-          <a href="#">
-            Features
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Team
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Sign In
-          </a>
-        </li>
-      </ol>
-    </nav>
-  </header>
+  <div class="grid-container">
 
-  <!-- component 2 -->
-  <main>
-    <img src="./images/illustration-1.svg" alt="illustration">
-    <h1>
-      All your files in one secure location, accessible anywhere.
-    </h1>
+    <!-- component 1 -->
+    <header class="header-component">
+      <img class="header-component__img" src="./images/logo.svg" alt="company logo">
+      <nav class="header-component__nav">
+        <ol>
+          <li>
+            <a href="#">
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Team
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Sign In
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </header>
 
-    <p>
-      Fylo stores your most important files in one secure location.
-      Access them wherever you need, share and collaborate with friends,
-      family, and co-workers.
-    </p>
-
-
-    <label for="email"></label>
-    <input type="email" id="email" placeholder="Enter your email...">
-    <button>
-      Get Started
-    </button>
-  </main>
-
-  <!-- component 3 -->
-  <article>
-    <img src="./images/illustration-2.svg" alt="illustration">
-    <h2>
-      Stay productive, wherever you are
-    </h2>
-    <p>
-      Never let location be an issue when accessing your files. Fylo has you
-      covered for all of your file storage needs.
-    </p>
-    <p>
-      Securely share files and folders with friends, family and colleagues for
-      live collaboration. No email attachments required!
-    </p>
-    <article>
-      <p>
-        See how Fylo works
+    <!-- component 2 -->
+    <main class="main-component">
+      <img class="main-component__img" src="./images/illustration-1.svg" alt="illustration">
+      <h1 class="main-component__heading">
+        All your files in one secure location, accessible anywhere.
+      </h1>
+      <p class="main-component__product-info">
+        Fylo stores your most important files in one secure location.
+        Access them wherever you need, share and collaborate with friends,
+        family, and co-workers.
       </p>
-      <img src="./images/icon-arrow.svg" alt="arrow icon">
+      <label for="email"></label>
+      <input class="main-component__email-input" type="email" id="email" placeholder="Enter your email...">
+      <button class="main-component__button">
+        Get Started
+      </button>
+    </main>
+
+    <!-- component 3 -->
+    <article class="info-component">
+      <img class="info-component__img" src="./images/illustration-2.svg" alt="illustration">
+      <h2 class="info-component__heading">
+        Stay productive, wherever you are
+      </h2>
+      <p class="info-component__info-1">
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
+      </p>
+      <p class="info-component__info-2">
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!
+      </p>
+      <article class="info-component__working-info">
+        <p>
+          See how Fylo works
+        </p>
+        <img src="./images/icon-arrow.svg" alt="arrow icon">
+      </article>
+      <article class="info-component__testimonial">
+        <img src="./images/icon-quotes.svg" alt="quotes icon">
+        <p>
+          Fylo has improved our team productivity by an order of magnitude. Since
+          making the switch our team has become a well-oiled collaboration machine.
+        </p>
+        <img src="./images/avatar-testimonial.jpg" alt="CEO image icon">
+        <h3>
+          Kyle Burton
+        </h3>
+        <p>
+          Founder & CEO, Huddle
+        </p>
+      </article>
     </article>
 
-    <article>
-      <img src="./images/icon-quotes.svg" alt="quotes icon">
-      <p>
-        Fylo has improved our team productivity by an order of magnitude. Since
-        making the switch our team has become a well-oiled collaboration machine.
+    <!-- component 4 -->
+    <article class="product-trial-component">
+      <h2 class="product-trial-component__heading">
+        Get early access today
+      </h2>
+      <p class="product-trial-component__info">
+        It only takes a minute to sign up and our free starter tier is extremely generous.
+        If you have any questions, our support team would be happy to help you.
       </p>
-      <img src="./images/avatar-testimonial.jpg" alt="CEO image icon">
-      <h3>
-        Kyle Burton
-      </h3>
-      <p>
-        Founder & CEO, Huddle
-      </p>
+      <label for="email-2"></label>
+      <input class="product-trial-component__email-input" type="email" id="email-2" placeholder="Enter your email...">
+      <button class="product-trial-component__button">
+        Get Started For Free
+      </button>
     </article>
-  </article>
-
-  <!-- component 4 -->
-  <article>
-    <h2>
-      Get early access today
-    </h2>
-
-    <p>
-      It only takes a minute to sign up and our free starter tier is extremely generous.
-      If you have any questions, our support team would be happy to help you.
-    </p>
-
-    <label for="email-2"></label>
-    <input type="email" id="email-2" placeholder="Enter your email...">
-    <button>
-      Get Started For Free
-    </button>
-  </article>
 
 
-  <!-- component 5 -->
-  <footer>
-    <img src="./images/logo.svg" alt="company logo">
+    <!-- component 5 -->
+    <footer class="footer-component">
+      <img class="footer-component__logo" src="./images/logo.svg" alt="company logo">
+      <section class="footer-component__phone">
+        <img src="./images/icon-phone.svg" alt="phone icon">
+        <p>
+          Phone: +1-543-123-4567
+        </p>
+      </section>
+      <section class="footer-component__email">
+        <img src="./images/icon-email.svg" alt="email icon">
+        <p>
+          example@fylo.com
+        </p>
+      </section>
+      <section class="footer-component__about-us">
+        <h3>
+          About Us
+        </h3>
+        <ul>
+          <li>
+            Jobs
+          </li>
+          <li>
+            Press
+          </li>
+          <li>
+            Blog
+          </li>
+        </ul>
+      </section>
+      <section class="footer-component__contact-us">
+        <h3>
+          Contact Us
+        </h3>
+        <ul>
+          <li>
+            Terms
+          </li>
+          <li>
+            Privacy
+          </li>
+        </ul>
+      </section>
+      <section class="footer-component__social-links">
+        <ul>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </section>
+    </footer>
 
-    <img src="./images/icon-phone.svg" alt="phone icon">
-    <p>
-      Phone: +1-543-123-4567
-    </p>
+  </div>
 
-    <img src="./images/icon-email.svg" alt="email icon">
-    <p>
-      example@fylo.com
-    </p>
-
-    <section>
-      <h3>
-        About Us
-      </h3>
-      <ul>
-        <li>
-          Jobs
-        </li>
-        <li>
-          Press
-        </li>
-        <li>
-          Blog
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>
-        Contact Us
-      </h3>
-      <ul>
-        <li>
-          Terms
-        </li>
-        <li>
-          Privacy
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <ul>
-        <li><i class="fa-brands fa-facebook-f"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-      </ul>
-    </section>
-  </footer>
 </body>
 
 </html>
