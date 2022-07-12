@@ -383,6 +383,22 @@ article {
   list-style-type: none;
 }
 
+/* Google "css circle around fb icon" */
+/* https://stackoverflow.com/a/37407965/2607372 */
+.footer-component__social-links > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 35px;
+  height: 35px;
+
+  background-color: var(--clr-very-dark-blue);
+
+  border-radius: 50px;
+  border: 0.12rem solid white;
+}
+
 .footer-component__about-us,
 .footer-component__contact-us {
   display: flex;
@@ -411,8 +427,8 @@ article {
   justify-content: center;
 }
 
-.footer-component__social-links > ul > li > i {
-  font-size: 2rem;
+.fa-brands {
+  font-size: 1.6rem;
 }
 
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
