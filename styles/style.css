@@ -80,6 +80,42 @@ article {
   gap: 6rem;
 
   min-width: 37.5rem;
+
+  padding: 0 1.5rem;
+  margin: 2rem 0;
+}
+
+/* style 1st component - mobile */
+
+.header-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-component__img {
+  height: 3.5rem;
+}
+
+.header-component__nav {
+  padding-right: 1.5rem;
+}
+
+.header-component__nav > ol {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-component__nav > ol > li {
+  list-style-type: none;
+
+  font-size: 1.5rem;
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-400);
+}
+
+.header-component__nav > ol > li > a {
+  text-decoration: none;
 }
 
 /* style 2nd component - mobile */
