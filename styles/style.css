@@ -291,6 +291,75 @@ article {
 
   padding: 1.4rem 0;
 }
+
+/* style 5th component - mobile */
+
+/* remove me */
+.footer-component {
+  border: none;
+}
+
+.footer-component {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background-color: var(--clr-very-dark-blue);
+  color: white;
+
+  padding-left: 1.5rem;
+}
+
+.footer-component__logo {
+  width: 50%;
+}
+
+.footer-component__phone,
+.footer-component__email {
+  display: flex;
+  gap: 1.5rem;
+
+  font-family: var(--ff-body);
+  font-weight: var(--fw-400);
+  font-size: 1.3rem;
+}
+
+.footer-component__about-us > ul > li,
+.footer-component__contact-us > ul > li,
+.footer-component__social-links > ul > li {
+  list-style-type: none;
+}
+
+.footer-component__about-us,
+.footer-component__contact-us {
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--ff-body);
+  font-weight: var(--fw-400);
+  font-size: 1.3rem;
+}
+
+.footer-component__about-us > ul,
+.footer-component__contact-us > ul {
+  padding: 1.2rem 0;
+}
+
+.footer-component__about-us > ul > li,
+.footer-component__contact-us > ul > li {
+  padding: 1.2rem 0;
+}
+
+.footer-component__social-links > ul {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+}
+
+.footer-component__social-links > ul > li > i {
+  font-size: 2rem;
+}
+
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
 
 .header-component {
