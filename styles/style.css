@@ -61,3 +61,41 @@ article {
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 /* --------------------------- specific styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
+
+/* ----------- ----------- ----------- mobile first approach ----------- ----------- ----------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header-component"
+    "main-component"
+    "info-component"
+    "product-trial-component"
+    "footer-component";
+  gap: 6rem;
+
+  min-width: 37.5rem;
+}
+
+/* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
+
+.header-component {
+  grid-area: header-component;
+}
+
+.main-component {
+  grid-area: main-component;
+}
+
+.info-component {
+  grid-area: info-component;
+}
+
+.product-trial-component {
+  grid-area: product-trial-component;
+}
+
+.footer-component {
+  grid-area: footer-component;
+}
