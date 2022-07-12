@@ -59,7 +59,7 @@ img {
 header,
 footer,
 article {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
@@ -77,12 +77,8 @@ article {
     "info-component"
     "product-trial-component"
     "footer-component";
-  gap: 6rem;
 
   min-width: 37.5rem;
-
-  padding: 0 1.5rem;
-  margin: 2rem 0;
 }
 
 /* style 1st component - mobile */
@@ -91,6 +87,8 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 4rem 1.5rem 8rem 1.5rem;
 }
 
 .header-component__img {
@@ -124,11 +122,13 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.6rem;
+  gap: 2.5rem;
+
+  padding: 1rem 1.5rem 8rem 1.5rem;
 }
 
 .main-component__heading {
-  max-width: 85%;
+  max-width: 92%;
 
   font-family: var(--ff-heading);
   font-weight: var(--fw-700);
@@ -138,7 +138,7 @@ article {
 }
 
 .main-component__product-info {
-  max-width: 80%;
+  max-width: 85%;
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
   font-size: 1.4rem;
@@ -148,17 +148,26 @@ article {
 
 .main-component__email-input {
   width: 100%;
-  font-size: 1.4rem;
-  padding: 1.4rem 0 1.4rem 1rem;
+
+  font-size: 1.3rem;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-400);
+
+  padding: 1.2rem 0 1.2rem 1rem;
 }
 
 .main-component__button {
   width: 100%;
   padding: 1.4rem 0;
-  font-size: 1.4rem;
 
+  font-size: 1.4rem;
   font-family: var(--ff-body);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-700);
+
+  background-color: var(--clr-bright-blue);
+  color: white;
+
+  border: none;
 }
 
 /* style 3rd component - mobile */
@@ -166,25 +175,42 @@ article {
 .info-component {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
+
+  background: linear-gradient(
+      to top,
+      var(--clr-light-grayish-blue),
+      var(--clr-light-grayish-blue)
+    )
+    no-repeat 0px 4.8rem;
+
+  padding-bottom: 8rem;
+}
+
+.info-component__img {
+  padding: 2rem 1.5rem 6rem 1.5rem;
 }
 
 .info-component__heading {
   font-family: var(--ff-heading);
   font-weight: var(--fw-700);
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+
+  padding: 0 1.5rem;
 }
 
 .info-component__info-1,
 .info-component__info-2 {
-  width: 86%;
+  width: 93%;
 
   font-size: 1.4rem;
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
 
   text-align: center;
+
+  padding: 0 1.5rem;
 }
 
 .info-component__working-info {
@@ -207,11 +233,16 @@ article {
 }
 
 .info-component__testimonial {
+  width: 85%;
+
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 
-  padding: 0 5rem;
+  padding: 2rem 2rem 2rem 3rem;
+  margin-top: 2rem;
+
+  background-color: white;
 }
 
 .info-component__testimonial > p {
@@ -256,6 +287,11 @@ article {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+
+  padding: 6rem 1.5rem;
+
+  background-color: var(--clr-desaturated-blue);
+  color: white;
 }
 
 .product-trial-component__heading {
@@ -265,39 +301,43 @@ article {
 }
 
 .product-trial-component__info {
-  width: 75%;
+  width: 90%;
 
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
   font-size: 1.4rem;
 
   text-align: center;
+
+  padding: 1.5rem 0;
 }
 
 .product-trial-component__email-input {
-  width: 65%;
-
-  font-size: 1.4rem;
-
-  padding: 1.4rem 0 1.4rem 1rem;
-}
-
-.product-trial-component__button {
-  width: 65%;
+  width: 75%;
 
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 
-  padding: 1.4rem 0;
+  padding: 0.8rem 0;
+  padding-left: 1rem;
+}
+
+.product-trial-component__button {
+  width: 75%;
+
+  font-family: var(--ff-body);
+  font-weight: var(--fw-400);
+  font-size: 1.1rem;
+
+  padding: 1.2rem 0;
+
+  background-color: var(--clr-bright-blue);
+  border: none;
+  color: white;
 }
 
 /* style 5th component - mobile */
-
-/* remove me */
-.footer-component {
-  border: none;
-}
 
 .footer-component {
   display: flex;
@@ -307,21 +347,34 @@ article {
   background-color: var(--clr-very-dark-blue);
   color: white;
 
-  padding-left: 1.5rem;
+  padding: 5rem 3rem;
 }
 
 .footer-component__logo {
   width: 50%;
+
+  padding-bottom: 1.5rem;
 }
 
 .footer-component__phone,
 .footer-component__email {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 2.5rem;
 
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+}
+
+.footer-component__phone > img {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.footer-component__email > img {
+  width: 2.3rem;
+  height: 1.9rem;
 }
 
 .footer-component__about-us > ul > li,
@@ -337,7 +390,9 @@ article {
 
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+
+  padding-top: 2rem;
 }
 
 .footer-component__about-us > ul,
