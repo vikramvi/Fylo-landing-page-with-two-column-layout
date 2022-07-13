@@ -616,13 +616,45 @@ article {
 
   .footer-component {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 42rem 20rem 20rem 18rem;
+    grid-template-rows: 5.4rem 2.2rem 2.2rem;
     grid-template-areas:
       "footer-component__logo . . ."
       "footer-component__phone footer-component__about-us footer-component__contact-us footer-component__social-links"
       "footer-component__email footer-component__about-us footer-component__contact-us .";
 
     width: 90%;
+    padding: 10rem 7rem 16rem 7rem;
+  }
+
+  .footer-component__logo {
+    width: 40%;
+  }
+
+  .footer-component__phone,
+  .footer-component__email {
+    color: var(--clr-light-gray);
+    font-size: 1.4rem;
+  }
+
+  .footer-component__about-us,
+  .footer-component__contact-us {
+    padding: 0;
+    color: var(--clr-light-gray);
+    font-size: 1.4rem;
+  }
+
+  .footer-component__social-links > ul {
+    gap: 1.8rem;
+  }
+
+  .footer-component__social-links > ul > li {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .fa-brands {
+    font-size: 1.4rem;
   }
 }
 
