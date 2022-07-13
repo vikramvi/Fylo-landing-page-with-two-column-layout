@@ -114,6 +114,7 @@ article {
 
 .header-component__nav > ol > li > a {
   text-decoration: none;
+  color: var(--clr-desaturated-blue);
 }
 
 /* style 2nd component - mobile */
@@ -135,19 +136,20 @@ article {
   font-size: 2.5rem;
 
   text-align: center;
+  line-height: 1.5;
 }
 
 .main-component__product-info {
   max-width: 85%;
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 
   text-align: center;
 }
 
 .main-component__email-input {
-  width: 100%;
+  width: 85%;
 
   font-size: 1.3rem;
   font-family: var(--ff-body);
@@ -157,7 +159,7 @@ article {
 }
 
 .main-component__button {
-  width: 100%;
+  width: 85%;
   padding: 1.4rem 0;
 
   font-size: 1.4rem;
@@ -188,6 +190,10 @@ article {
   padding-bottom: 8rem;
 }
 
+.info-component__background-img {
+  width: 100%;
+}
+
 .info-component__img {
   padding: 2rem 1.5rem 6rem 1.5rem;
 }
@@ -202,34 +208,38 @@ article {
 
 .info-component__info-1,
 .info-component__info-2 {
-  width: 93%;
+  width: 32.5rem;
 
   font-size: 1.4rem;
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
 
   text-align: center;
-
-  padding: 0 1.5rem;
 }
 
 .info-component__working-info {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  align-items: center;
 
-  width: 50%;
+  width: 41.7%;
   border-bottom: 0.1rem solid green;
+
+  padding-bottom: 0.5rem;
 }
 
 .info-component__working-info > p {
   font-size: 1.4rem;
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
+
+  color: var(--clr-moderate-cyan);
 }
 
 .info-component__working-info > img {
-  width: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .info-component__testimonial {
@@ -298,6 +308,8 @@ article {
   font-family: var(--ff-heading);
   font-weight: var(--fw-700);
   font-size: 2.2rem;
+
+  color: var(--clr-light-grayish-blue);
 }
 
 .product-trial-component__info {
@@ -310,6 +322,8 @@ article {
   text-align: center;
 
   padding: 1.5rem 0;
+
+  color: var(--clr-light-grayish-blue);
 }
 
 .product-trial-component__email-input {
@@ -365,6 +379,8 @@ article {
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
   font-size: 1.6rem;
+
+  color: var(--clr-light-grayish-blue);
 }
 
 .footer-component__phone > img {
@@ -409,6 +425,8 @@ article {
   font-size: 1.6rem;
 
   padding-top: 2rem;
+
+  color: var(--clr-light-grayish-blue);
 }
 
 .footer-component__about-us > ul,
@@ -463,21 +481,17 @@ article {
     gap: 4rem;
   }
 
-  .header-component__nav > ol > li > a {
-    color: var(--clr-desaturated-blue);
-  }
-
   /* component 2 - desktop */
 
   .main-component {
     display: grid;
-    grid-template-columns: 30% 20% 50%;
-    grid-template-rows: 70px 80px 45px;
+    grid-template-columns: 30rem 20rem 63rem;
+    grid-template-rows: 10rem 9rem 4.5rem;
     grid-template-areas:
       "main-component__heading main-component__heading main-component__img"
       "main-component__product-info main-component__product-info main-component__img"
       "main-component__email-input main-component__button main-component__img";
-    gap: 2.4rem;
+    gap: 1rem;
 
     width: 80%;
     padding: 8rem 0 16rem 0;
@@ -485,9 +499,9 @@ article {
 
   .main-component__img {
     max-width: 90%;
-    justify-self: center;
+    justify-self: end;
 
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   .main-component__heading {
@@ -495,13 +509,33 @@ article {
 
     font-size: 3.4rem;
     line-height: 1.4;
+
+    max-width: 100%;
   }
 
   .main-component__product-info {
     text-align: start;
     font-size: 1.6rem;
 
-    width: 85%;
+    max-width: 100%;
+
+    align-self: start;
+
+    color: var(--clr-very-dark-blue);
+  }
+
+  .main-component__email-input {
+    padding: 0.8rem 0 0.8rem 1rem;
+  }
+
+  .main-component__button {
+    padding: 1.1rem 0 1.1rem 1rem;
+    font-size: 1.3rem;
+  }
+
+  .main-component__email-input,
+  .main-component__button {
+    width: 100%;
   }
 
   /* component 3 - desktop */
@@ -554,30 +588,26 @@ article {
   .info-component__info-2 {
     text-align: start;
 
-    width: 85%;
+    width: 82%;
     padding: 0 0 0 7rem;
 
-    font-size: 1.6rem;
-    font-weight: var(--fw-700);
+    font-size: 1.5rem;
+
+    color: var(--clr-very-dark-blue);
   }
 
   .info-component__working-info {
     align-items: center;
 
     justify-content: start;
-    max-width: 28.7%;
+    max-width: 25.1%;
 
-    padding: 0;
+    padding: 0 0 0.5rem 0;
     margin-left: 7rem;
   }
 
   .info-component__working-info > p {
     font-size: 1.6rem;
-  }
-
-  .info-component__working-info > img {
-    width: 2rem;
-    height: 2rem;
   }
 
   .info-component__testimonial {
