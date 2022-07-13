@@ -223,7 +223,7 @@ article {
   gap: 1rem;
   align-items: center;
 
-  width: 41.7%;
+  width: 15.8rem;
   border-bottom: 0.1rem solid green;
 
   padding-bottom: 0.5rem;
@@ -600,7 +600,7 @@ article {
     align-items: center;
 
     justify-content: start;
-    max-width: 25.1%;
+    width: 25.1%;
 
     padding: 0 0 0.5rem 0;
     margin-left: 7rem;
