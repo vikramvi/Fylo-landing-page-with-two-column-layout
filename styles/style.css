@@ -447,6 +447,24 @@ article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "header-component__img header-component__nav";
+
+    width: 80%;
+  }
+
+  .header-component__img {
+    height: 4.5rem;
+  }
+
+  .header-component__nav {
+    justify-self: end;
+  }
+
+  .header-component__nav > ol {
+    gap: 4rem;
+  }
+
+  .header-component__nav > ol > li > a {
+    color: var(--clr-desaturated-blue);
   }
 
   /* component 2 - desktop */
