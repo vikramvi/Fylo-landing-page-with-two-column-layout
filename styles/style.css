@@ -462,7 +462,7 @@ article {
     gap: 2.4rem;
 
     width: 80%;
-    padding: 8rem 0;
+    padding: 8rem 0 16rem 0;
   }
 
   .main-component__img {
@@ -490,7 +490,8 @@ article {
 
   .info-component {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-rows: 10rem 6rem 5rem 5rem 3rem 25rem;
     grid-template-areas:
       "info-component__background-img info-component__background-img"
       "info-component__heading  info-component__img"
@@ -498,6 +499,80 @@ article {
       "info-component__info-2  info-component__img"
       "info-component__working-info  info-component__img"
       "info-component__testimonial  info-component__img";
+    gap: 2rem;
+
+    max-width: 90%;
+    background: none;
+
+    background: linear-gradient(
+        to top,
+        var(--clr-light-grayish-blue),
+        var(--clr-light-grayish-blue)
+      )
+      no-repeat 0px 6rem;
+  }
+
+  .info-component__background-img {
+    content: url("../images/bg-curve-desktop.svg");
+    padding-bottom: 8rem;
+  }
+
+  .info-component__img {
+    padding: 0;
+
+    justify-self: center;
+
+    max-width: 90%;
+    margin-bottom: 8rem;
+  }
+
+  .info-component__heading {
+    font-size: 3.8rem;
+    padding: 0 0 0 7rem;
+    align-self: start;
+  }
+
+  .info-component__info-1,
+  .info-component__info-2 {
+    text-align: start;
+
+    width: 85%;
+    padding: 0 0 0 7rem;
+
+    font-size: 1.6rem;
+    font-weight: var(--fw-700);
+  }
+
+  .info-component__working-info {
+    align-items: center;
+
+    justify-content: start;
+    max-width: 28.7%;
+
+    padding: 0;
+    margin-left: 7rem;
+  }
+
+  .info-component__working-info > p {
+    font-size: 1.6rem;
+  }
+
+  .info-component__working-info > img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .info-component__testimonial {
+    max-width: 57%;
+
+    padding: 3rem 5rem 3rem 4rem;
+    margin-left: 7rem;
+    margin-top: 2rem;
+  }
+
+  .info-component__testimonial > p {
+    font-size: 1.3rem;
+    font-weight: var(--fw-700);
   }
 
   /* component 4 - desktop */
