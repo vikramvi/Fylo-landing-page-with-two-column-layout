@@ -435,19 +435,55 @@ article {
 
 @media screen and (min-width: 48rem) {
   .grid-container {
+    justify-items: center;
+
     width: 100%;
     max-width: 144rem;
+  }
+
+  /* component 1 - desktop */
+
+  .header-component {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header-component__img header-component__nav";
   }
 
   /* component 2 - desktop */
 
   .main-component {
     display: grid;
-    grid-template-columns: 25% 15% 60%;
+    grid-template-columns: 30% 20% 50%;
+    grid-template-rows: 70px 80px 45px;
     grid-template-areas:
       "main-component__heading main-component__heading main-component__img"
       "main-component__product-info main-component__product-info main-component__img"
       "main-component__email-input main-component__button main-component__img";
+    gap: 2.4rem;
+
+    width: 80%;
+    padding: 8rem 0;
+  }
+
+  .main-component__img {
+    max-width: 90%;
+    justify-self: center;
+
+    margin-top: 4rem;
+  }
+
+  .main-component__heading {
+    text-align: start;
+
+    font-size: 3.4rem;
+    line-height: 1.4;
+  }
+
+  .main-component__product-info {
+    text-align: start;
+    font-size: 1.6rem;
+
+    width: 85%;
   }
 
   /* component 3 - desktop */
@@ -492,6 +528,14 @@ article {
 
 .header-component {
   grid-area: header-component;
+}
+
+.header-component__img {
+  grid-area: header-component__img;
+}
+
+.header-component__nav {
+  grid-area: header-component__nav;
 }
 
 /* component 2 - grid areas */
