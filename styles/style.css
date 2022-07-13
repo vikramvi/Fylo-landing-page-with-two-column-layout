@@ -431,24 +431,177 @@ article {
   font-size: 1.6rem;
 }
 
+/* ----------- ----------- ----------- desktop second approach ----------- ----------- ----------- */
+
+@media screen and (min-width: 48rem) {
+  .grid-container {
+    width: 100%;
+    max-width: 144rem;
+  }
+
+  /* component 2 - desktop */
+
+  .main-component {
+    display: grid;
+    grid-template-columns: 25% 15% 60%;
+    grid-template-areas:
+      "main-component__heading main-component__heading main-component__img"
+      "main-component__product-info main-component__product-info main-component__img"
+      "main-component__email-input main-component__button main-component__img";
+  }
+
+  /* component 3 - desktop */
+
+  .info-component {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "info-component__background-img info-component__background-img"
+      "info-component__heading  info-component__img"
+      "info-component__info-1  info-component__img"
+      "info-component__info-2  info-component__img"
+      "info-component__working-info  info-component__img"
+      "info-component__testimonial  info-component__img";
+  }
+
+  /* component 4 - desktop */
+
+  .product-trial-component {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "product-trial-component__heading product-trial-component__email-input"
+      "product-trial-component__info product-trial-component__button";
+  }
+
+  /* component 5 - desktop */
+
+  .footer-component {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "footer-component__logo . . ."
+      "footer-component__phone footer-component__about-us footer-component__contact-us footer-component__social-links"
+      "footer-component__email footer-component__about-us footer-component__contact-us .";
+  }
+}
+
 /* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
+
+/* component 1 - grid areas */
 
 .header-component {
   grid-area: header-component;
 }
 
+/* component 2 - grid areas */
+
 .main-component {
   grid-area: main-component;
 }
+
+.main-component__img {
+  grid-area: main-component__img;
+}
+
+.main-component__heading {
+  grid-area: main-component__heading;
+}
+
+.main-component__product-info {
+  grid-area: main-component__product-info;
+}
+
+.main-component__email-input {
+  grid-area: main-component__email-input;
+}
+
+.main-component__button {
+  grid-area: main-component__button;
+}
+
+/* component 3 - grid areas */
 
 .info-component {
   grid-area: info-component;
 }
 
+.info-component__background-img {
+  grid-area: info-component__background-img;
+}
+
+.info-component__img {
+  grid-area: info-component__img;
+}
+
+.info-component__heading {
+  grid-area: info-component__heading;
+}
+
+.info-component__info-1 {
+  grid-area: info-component__info-1;
+}
+
+.info-component__info-2 {
+  grid-area: info-component__info-2;
+}
+
+.info-component__working-info {
+  grid-area: info-component__working-info;
+}
+
+.info-component__testimonial {
+  grid-area: info-component__testimonial;
+}
+
+/* component 4 - grid areas  */
+
 .product-trial-component {
   grid-area: product-trial-component;
 }
 
+.product-trial-component__heading {
+  grid-area: product-trial-component__heading;
+}
+
+.product-trial-component__info {
+  grid-area: product-trial-component__info;
+}
+
+.product-trial-component__email-input {
+  grid-area: product-trial-component__email-input;
+}
+
+.product-trial-component__button {
+  grid-area: product-trial-component__button;
+}
+
+/* component 5 - grid areas */
+
 .footer-component {
   grid-area: footer-component;
+}
+
+.footer-component__logo {
+  grid-area: footer-component__logo;
+}
+
+.footer-component__phone {
+  grid-area: footer-component__phone;
+}
+
+.footer-component__email {
+  grid-area: footer-component__email;
+}
+
+.footer-component__about-us {
+  grid-area: footer-component__about-us;
+}
+
+.footer-component__contact-us {
+  grid-area: footer-component__contact-us;
+}
+
+.footer-component__social-links {
+  grid-area: footer-component__social-links;
 }
