@@ -554,7 +554,8 @@ article {
     gap: 2rem;
 
     max-width: 90%;
-    background: none;
+
+    margin-top: 12rem;
 
     background: linear-gradient(
         to top,
