@@ -85,4 +85,4 @@ Users should be able to:
 
 - Frontend Mentor slack community
 - YT content creators
-- Google + SO communi
+- Google + SO community
