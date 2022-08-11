@@ -229,7 +229,7 @@ article {
   padding-bottom: 0.5rem;
 }
 
-.info-component__working-info > p {
+.info-component__working-info > h3 {
   font-size: 1.4rem;
   font-family: var(--ff-body);
   font-weight: var(--fw-400);
@@ -616,7 +616,7 @@ article {
     margin-left: 7rem;
   }
 
-  .info-component__working-info > p {
+  .info-component__working-info > h3 {
     font-size: 1.6rem;
   }
 
