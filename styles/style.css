@@ -394,25 +394,8 @@ article {
 }
 
 .footer-component__about-us > ul > li,
-.footer-component__contact-us > ul > li,
-.footer-component__social-links > ul > li {
+.footer-component__contact-us > ul > li {
   list-style-type: none;
-}
-
-/* Google "css circle around fb icon" */
-/* https://stackoverflow.com/a/37407965/2607372 */
-.footer-component__social-links > ul > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 35px;
-  height: 35px;
-
-  background-color: var(--clr-very-dark-blue);
-
-  border-radius: 50px;
-  border: 0.12rem solid white;
 }
 
 .footer-component__about-us,
@@ -439,14 +422,40 @@ article {
   padding: 1.2rem 0;
 }
 
-.footer-component__social-links > ul {
-  display: flex;
-  gap: 2.4rem;
-  justify-content: center;
+.footer-component-social-links {
+  display: grid;
+  grid-template-columns: repeat(3, 3.5rem);
+  grid-template-areas: "footer-component-social-links__fb-img footer-component-social-links__twitter-img footer-component-social-links__instagram-img";
+
+  align-self: center;
 }
 
-.fa-brands {
-  font-size: 1.6rem;
+.footer-component-social-links__fb-img,
+.footer-component-social-links__twitter-img,
+.footer-component-social-links__instagram-img {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  border: 0.1rem solid white;
+  border-radius: 50%;
+}
+
+.footer-component-social-links__fb-img > img {
+  width: 35%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+
+.footer-component-social-links__twitter-img > img,
+.footer-component-social-links__instagram-img > img {
+  width: 50%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
 }
 
 /* ----------- ----------- ----------- desktop second approach ----------- ----------- ----------- */
@@ -669,7 +678,7 @@ article {
     grid-template-rows: 5.4rem 2.2rem 2.2rem;
     grid-template-areas:
       "footer-component__logo . . ."
-      "footer-component__phone footer-component__about-us footer-component__contact-us footer-component__social-links"
+      "footer-component__phone footer-component__about-us footer-component__contact-us footer-component-social-links"
       "footer-component__email footer-component__about-us footer-component__contact-us .";
 
     width: 90%;
@@ -690,19 +699,6 @@ article {
   .footer-component__contact-us {
     padding: 0;
     color: var(--clr-light-gray);
-    font-size: 1.4rem;
-  }
-
-  .footer-component__social-links > ul {
-    gap: 1.8rem;
-  }
-
-  .footer-component__social-links > ul > li {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .fa-brands {
     font-size: 1.4rem;
   }
 }
@@ -831,6 +827,18 @@ article {
   grid-area: footer-component__contact-us;
 }
 
-.footer-component__social-links {
-  grid-area: footer-component__social-links;
+.footer-component-social-links {
+  grid-area: footer-component-social-links;
+}
+
+.footer-component-social-links__fb-img {
+  grid-area: footer-component-social-links__fb-img;
+}
+
+.footer-component-social-links__twitter-img {
+  grid-area: footer-component-social-links__twitter-img;
+}
+
+.footer-component-social-links__instagram-img {
+  grid-area: footer-component-social-links__instagram-img;
 }
